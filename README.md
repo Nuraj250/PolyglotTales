@@ -2,7 +2,7 @@
 
 **PolyglotTales** is a modern, AI-powered storytelling platform designed to help you learn new languages through immersive, interactive stories. Choose your language, set the difficulty, pick a theme — and start the tale with your own words. The AI takes it from there.
 
-<img src="public/ChatGPT Image Apr 19, 2025, 10_46_05 AM.png" width="100%" alt="PolyglotTales Demo" />
+<img src="public/home.png" width="100%" alt="PolyglotTales Demo" />
 
 ---
 
