@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 PolyglotTales
 
-## Getting Started
+**PolyglotTales** is a modern, AI-powered storytelling platform designed to help you learn new languages through immersive, interactive stories. Choose your language, set the difficulty, pick a theme — and start the tale with your own words. The AI takes it from there.
 
-First, run the development server:
+<img src="public/ChatGPT Image Apr 19, 2025, 10_46_05 AM.png" width="100%" alt="PolyglotTales Demo" />
+
+---
+
+## ✨ Features
+
+- 🌐 **Multilingual support**: Spanish, French, German, Japanese
+- 🧠 **Difficulty levels**: Beginner, Intermediate, Advanced
+- 🎭 **Story themes**: Adventure, Romance, Sci-Fi, Mythology
+- ✍️ **User-generated starting line** for stories
+- 🔊 **Text-to-speech (TTS)** to hear your story
+- 📚 **Vocabulary booster** with extracted keywords
+- 🌫️ **Glassmorphic UI** with theme toggle
+- 💡 Powered by **OpenAI** (GPT-4 or DeepSeek) for storytelling
+
+---
+
+## 📸 Preview
+
+> ✨ Choose → Type → Read → Listen → Learn
+
+![PolyglotTales UI](https://user-images.githubusercontent.com/your-image-placeholder/ui-preview.png)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Nuraj250/PolyglotTales.git
+cd PolyglotTales
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Add your OpenAI API key
+
+Create a `.env.local` file:
+
+```
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxx
+```
+
+> ✅ You can also use DeepSeek or Gemini API by modifying `/api/generate.ts`
+
+### 4. Run the app
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- **Framework**: Next.js 15 (Turbopack)
+- **Styling**: Tailwind CSS 4 (Glassmorphism)
+- **Animations**: Framer Motion
+- **Language Model**: OpenAI GPT-4 / DeepSeek
+- **TTS**: Native Web Speech API
+- **Dark/Light Theme**: Tailwind `darkMode` via class toggle
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+│
+├── components/       # Reusable UI (SelectorGroup, GlassButton)
+├── pages/            # Routes (index, story, api/generate)
+├── styles/           # Tailwind + global CSS
+├── utils/            # Vocabulary extractor
+└── context/          # (Optional) global state
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌟 Contribution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Want to contribute a new language, theme, or TTS support? Open a PR or start a discussion — let’s grow this together!
+
+---
+
+## 📄 License
+
+MIT © 2025 [Nuraj]
