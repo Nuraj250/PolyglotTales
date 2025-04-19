@@ -21,9 +21,8 @@
 
 > ✨ Choose → Type → Read → Listen → Learn
 
-![PolyglotTales UI](https://user-images.githubusercontent.com/your-image-placeholder/ui-preview.png)
+![PolyglotTales UI](public/home.png)
 
----
 
 ## 🚀 Getting Started
 
