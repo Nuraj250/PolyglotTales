@@ -7,7 +7,7 @@ const LanguageSelector = ({ onSelect }: { onSelect: (lang: string) => void }) =>
       {["Spanish", "French", "German", "Japanese"].map((lang) => (
         <button key={lang}
           onClick={() => onSelect(lang)}
-          className="px-4 py-2 bg-white/20 rounded-lg hover:bg-white/30">
+          className="px-4 py-2 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-lg transition backdrop-blur-md">
           {lang}
         </button>
       ))}
