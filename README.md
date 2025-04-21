@@ -68,8 +68,6 @@ Visit: [http://localhost:3000](http://localhost:3000)
 - **TTS**: Native Web Speech API
 - **Dark/Light Theme**: Tailwind `darkMode` via class toggle
 
----
-
 ## 📁 Project Structure
 
 ```
@@ -81,8 +79,6 @@ src/
 ├── utils/            # Vocabulary extractor
 └── context/          # (Optional) global state
 ```
-
----
 
 ## 🌟 Contribution
 
