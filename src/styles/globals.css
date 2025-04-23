@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364];
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-glow: 0 0 20px rgba(255, 255, 255, 0.15);
+  --text-glow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.glow-text {
+  text-shadow: var(--text-glow);
+}
+
+.glass-card {
+  box-shadow: var(--glass-glow);
+}
+
+.glass-button {
+  background: var(--glass-bg);
+  border-color: var(--glass-border);
+  box-shadow: var(--glass-glow);
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
 }

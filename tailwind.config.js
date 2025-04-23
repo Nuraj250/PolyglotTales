@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ...defaultTheme.colors, // ✅ bring back full default color palette
+        ...defaultTheme.colors,
+        white: {
+          5: 'rgba(255, 255, 255, 0.05)',
+        }, // ✅ bring back full default color palette
       },
     },
   },

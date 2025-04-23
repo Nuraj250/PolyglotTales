@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { extractVocabulary } from "@/utils/tokenizer";
 import { motion } from "framer-motion";
+import GlassCard from "@/components/GlassCard";
 
 export default function StoryPage() {
   const { query } = useRouter();
@@ -44,17 +45,13 @@ export default function StoryPage() {
         <motion.h1
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center text-4xl font-bold"
+          className="text-center text-4xl font-bold glow-text"
         >
           📖 Your Custom Tale
         </motion.h1>
 
         {!submitted && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20"
-          >
+          <GlassCard>
             <h2 className="text-lg font-semibold mb-3">✍️ Write a starting sentence</h2>
             <textarea
               className="w-full p-4 rounded-lg bg-white/10 text-white focus:outline-none resize-none backdrop-blur-sm"
@@ -69,18 +66,14 @@ export default function StoryPage() {
             >
               ✨ Generate Story
             </button>
-          </motion.div>
+          </GlassCard>
         )}
 
         {loading && <p className="text-center">✨ Generating story...</p>}
 
         {story && (
           <>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20"
-            >
+            <GlassCard>
               <div className="whitespace-pre-wrap prose prose-invert max-w-none text-white">
                 {story}
               </div>
@@ -90,21 +83,16 @@ export default function StoryPage() {
               >
                 🔊 Read Aloud
               </button>
-            </motion.div>
+            </GlassCard>
 
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20"
-            >
+            <GlassCard>
               <h2 className="text-xl font-semibold mb-3">🧠 Vocabulary Boost</h2>
               <ul className="list-disc pl-6 space-y-1">
                 {vocab.map((word) => (
                   <li key={word}>{word}</li>
                 ))}
               </ul>
-            </motion.div>
+            </GlassCard>
           </>
         )}
       </div>

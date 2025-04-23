@@ -12,7 +12,7 @@ const SelectorGroup = ({
   selected?: string;
 }) => (
   <div className="mb-6 flex flex-col items-center text-center">
-    <h2 className="text-white font-semibold text-lg mb-3 flex items-center gap-2">{label}    </h2>
+    <h2 className="text-white font-semibold text-lg mb-4 glow-text">{label}</h2>
     <div className="flex flex-wrap justify-center gap-3">
       {options.map((opt) => (
         <GlassButton
