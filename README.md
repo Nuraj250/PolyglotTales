@@ -82,7 +82,8 @@ src/
 
 ## 🌟 Contribution
 
-Want to contribute a new language, theme, or TTS support? Open a PR or start a discussion — let’s grow this together!
+Want to contribute a new language, theme, or TTS support? Open a PR or start a discussion 
+let’s grow this together!
 
 ---
 
